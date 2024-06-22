@@ -1,0 +1,107 @@
+
+<html>
+    <head><style>
+        .r-container {
+            background-color: #ffffff;
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.1);
+        }
+        
+            .btn {
+            background-color:  rgb(150, 42, 232);
+            font-size: 30px;
+            width: 500px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        
+        body {
+            height: 200px;
+            background-image: linear-gradient(to right, rgb(0, 38, 255), rgb(204, 0, 255));
+        }
+        td{padding:12px;
+        font-family: Montserrat;}
+      
+    </style>
+    <script>
+        function val(event){
+            Event.preventDefault();
+            var a=document.getElementById("p1").value;
+            var b=document.getElementById("p2").value;
+            var c=document.getElementById("p3").value;
+            var d=document.getElementById("p4").value;
+            var e=document.getElementById("p5").value;
+            var f=document.getElementById("p6").value;
+            var drone=document.querySelector('input[name="drone"]:checked').value;
+
+
+        
+            document.writeln("Name = "+a"<br>");
+            document.writeln("userName = "+b"<br>");
+            document.writeln("Email = "+c"<br>");
+            document.writeln("Number = "+d"<br>");
+            document.writeln("password = "+e"<br>");
+            document.writeln("conform password = "+f"<br>");
+            document.write("Gender :"+drone+"<br>");
+        
+        
+        }
+        
+        </script>
+    </head>
+    <body>
+            <div class="r-container">
+                <!DOCTYPE html>
+                <html lang="en">
+     
+        <form>
+           
+            <table>
+                <tr><th><h2>Registration</h2></th></tr>
+                <tr>
+                    <td>Full Name<br><input type="text" name="Name" placeholder="Enter your name" id="p1"></td>
+                    <td>UserName<br><input type="text" name="Name" placeholder="Enter your UserName" id="p2"></td>
+                </tr>
+                
+                <tr>
+                    <td>Email<br><input type="email" name="email" placeholder="Enter your email" id="p3"></td>
+                    <td>Phone Number<br><input type="tel" name="Number" placeholder="Enter your Number" id="p4"></td>
+                </tr>
+                
+                <tr>
+                    <td>Password<br><input type="password" name="password" placeholder="Enter your name" id="p5"></td>
+                    <td>Conform Password<br><input type="password" name="password" placeholder="Enter your UserName" id="p6"></td>
+                </tr>
+                
+                <tr>
+                    
+                        <tr>
+                        <td>
+                            
+                             <label> Gender<br></label>
+                                <div id="r">
+                                  <input type="radio" id="" name="drone" value=""checked />
+                                  <label for="Male">Male</label>
+                                  <input type="radio" id="" name="drone" value="" />
+                                  <label for="Female">Female</label>
+                                  <input type="radio" id="" name="drone" value="" />
+                                  <label for="prefer not to say">prefer not to say</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+                    <button  class="btn"aligN="center" onclick="val(event)">Register</button>
+            
+        </form>
+        
+    </body>
+</html>
+
